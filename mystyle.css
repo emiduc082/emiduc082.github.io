@@ -1,0 +1,47 @@
+
+
+body {background-color: lightgray;
+} 
+h1 {text-align: center;
+}
+h2,h3 {color:black;
+    text-align: left
+}
+table{border-collapse:collapse;
+    width:100%;
+    }
+td,th {border:1px solid greys; 
+    padding: 8px;
+    text-align: center
+}
+tr:nth-child(even) {
+    background-color:lightgray
+}
+iframe{ color: aqua; 
+    width: 200px ; 
+    height: 200px ; 
+    border:yellow 
+}
+.myDiv{border:5px outset darkgrey ; 
+    background-color: lightgrey ; 
+    text-align: left;
+    width: 300px; 
+    height:203px
+}
+.Div1{border:5px outset black ;
+    background-color: lightblue ;
+    text-align: left; 
+    width: 130px; 
+    height:50px
+}
+.Div2{border:10px outset black ; 
+    background-color: lightblue ;
+    align-content: center,center; 
+    width: 300px ;
+    height: 300px;
+}
+.Div3{border:2px outset black ;
+    width: 152PX ; 
+    height: 40px;
+}
+    

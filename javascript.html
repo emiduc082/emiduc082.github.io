@@ -1,22 +1,50 @@
 <!DOCTYPE html>
 <html>
-        
     <head>
         <title> Personuppgifter</title>
         <script type="text/javascript" src="c-uppgift.js"></script>
+        <link rel="stylesheet" href="mystyle.css"> 
     </head>
     <body>
+    <div class="Div2">
+        <iframe src="https://emiduc082.github.io/"; ></iframe>
+    </div>
+    <div class="myDiv"> 
         <p> Fyll i namn och ålder i formuläret nedan</p>
         <form >
+            <DIV CLASS="Div3">
             <lable>Förnamn:  </lable>
                 <input type="text" id="fname" ><br> 
-            <lable>Efternamn:</lable>
+            </DIV>    
+            <DIV CLASS="Div3">
+            <lable>Efternamn:</lable><br>
                 <input type="text" id="lname" > <br> 
-            <lable> Ålder:    </lable>
+            </DIV>  
+            <DIV CLASS="Div3">
+            <lable> Ålder:</lable><br>
                 <input type="number" id="age"  > <br><br>
-            <input id="button" type="button" onclick="myFunction()" value="kilcka">
-        </form> 
-        <p id="demo"></p> <br> <br> <br> 
-        <a href="https://emiduc082.github.io/"> Första Sida </a>
+            </DIV>  
+            <input id="button" type="button" onclick="myFunction()" value="kilcka"><br>
+        </form>
+    </div>  
+    <div class="Div1">
+            <p id="demo"></p> 
+            <p> Stämmer detta?</p>
+    </div>
+        <a href="https://emiduc082.github.io/"> Skicka in ditt formulär! </a>
     </body>
 </html>
+<!-- <style>
+        body {background-color: lightgray;
+        } 
+        iframe{ color: aqua; width: 200px ; height: 200px ; border:yellow 
+        }
+        .myDiv{ border:5px outset darkgrey ; background-color: lightgrey ; text-align: left; width: 300px; height:203px
+        }
+        .Div1{ border:5px outset black ; background-color: lightblue ; text-align: left; width: 130px; height:50px
+        }
+        .Div2{ border:10px outset black ; background-color: lightblue ; align-content: center,center; width: 300px ; height: 300px;
+        }
+        .Div3{ border:2px outset black ; width: 152PX ; height: 40px;
+        }
+        </style>-->
