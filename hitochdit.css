@@ -16,11 +16,13 @@ body {
 h2{
     font-weight:100;
     font-size:38px;
-    color:#802082;
+    color:#2743c0;
 }
-
+.maps{
+    padding-right: 300px;
+}
 h3{
-    background: #802082;
+    background: #2743c0;
     padding: 5px;
     color:white;
     text-transform:uppercase;
@@ -72,7 +74,7 @@ nav.meny{
 }
 .imagebar{
     background:white;
-    background-image: url("himmel.png");
+    background-image: url("wrapper.jpg");
     background-repeat:no-repeat;
     background-size:100%;
     width:100%;
@@ -91,12 +93,15 @@ nav.meny{
 .resmal img{
     width:100%;
 }
+iframe{
+    padding-left: 120px;
+}
 footer{
-    background-image:url( "footer.gif");
+    
     width:100%;
     height:600px;
     background-repeat:no-repeat;
-    background-color:#802082;
+    background-color:#2743c0;
     background-size:100%;
     padding-top: 130px;
 }
