@@ -1,5 +1,4 @@
 
-
 body {background-color: lightgray;
 } 
 h1 {text-align: center;
@@ -44,4 +43,9 @@ iframe{ color: aqua;
     width: 152PX ; 
     height: 40px;
 }
-    
+.bild{
+    background-color:white;
+    width:60%;
+    float:right;
+    margin-top:45px;
+}
