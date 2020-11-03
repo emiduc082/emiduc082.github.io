@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Stäng Menyn</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Webbutveckling<br>Frågor</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Teknik</a> 
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Showcase</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Services</a> 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Designers</a> 
+    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Packages</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span> Webbutveckling</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b> FRÅGOR WEBBUTVECKLING</b></h1>
+    <h1 class="w3-xxxlarge w3-text-red"><b>TEKNIK.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <h5 style="width:100%; color: red" >Vad är HTTP?</h5> <p style="font-size:12px"> Hypertext Transfer Protocol(http) är ett komunikationsprotokoll sp, används för att överföra webbsidor på informationsnätverket World Wide Webb. HTTP bygger på förfrågan/svars förfaradne mellan klienter och servrar. Ex :"En HTTP-klient, vanligen en webbläsare, som skall hämta en HTML-fil, en bild eller annan fil från en webbserver skickar en förfrågan bestående av en kort textsträng till en TCP-port på servern" </p>
+      <h5 style="width:100%; color: red" >Vad är TCP?</h5>   <p style="font-size:12px">Transmission control Protocol (TCP) skickar data som den delar upp i lämpliga mängder i "segment". Dessa segment skickas i egna IP paket. När datan kommit fram skickas en ACK segment för att bekräffta att datan kommit fram. Om motagaren förlorar data paket så kan drar TCP då ner överföringshasitgheten tl hälften för att undvika förlusterna. </p>
+      <h5 style="width:100%; color: red" >Vad är IP?</h5>   <p style="font-size:12px">Internet Protocol adress(IP-adress) är enkelt sätt ett nummer osm används som adress på internet. Nummret identifierar en viss dator och vilket nätverk som är uppkoplat</p>
+      </div>
+    <div class="w3-half">
+       <h5 style="width:100%; color: red" >Vad är DNS?</h5>  <p style="font-size:12px">Domain Name System (DNS) används för att förenkla kommunikationen på IP nätverk. De koppar ihop ett domännamn altså "www.google.com" med en IP adress 342.2.3.24. I enkelhet så gör det att man kan skriva namn på en webbsida istället för att behöva skriva dess IP adress.</p> 
+       <h5 style="width:100%; color: red" >Vad är FTP?</h5>  <p style=" font-size: 12px">File Transfer Protocol (FTP) är ett komando baserad protokoll för överföring av text och binära datafiler. Dock är FTP väldigt osäkert eftersom att datan skickas som den är och vem som helst kan lätt se vad som skickas. FTP fanns redan innnan WWW kom men numera använderman sig av HTTP istället eftersom att det erbjuder en mer säker överföring av data.</p>
+       <h5 style="width:100%; color: red" >Varför är det viktigt att utgå från gällande standard av HTML?</h5>  <p style="font-size:12px"> Det är viktigt eftersom att webbutvecklingen komemr alltid att utvecklas därör är det viktigt att man förljer standarden för annars så kommer ens sidor inte att fungera vilket gör att man kommer behöva uppdatera dem efter varje uppdatering.</p>
+      </div>
+  </div>
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/5b/InternetProtocolStack.png" style="float:left;width:300px;height:400px; ">
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+  
+
+  <!-- Services -->
+  <div class="w3-container" id="Historia" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Sammhällspåverkan.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p Style="text-align: center">Diskutera hur internets framfart har påverkat samhället. <br>
+      Jämför 1970-talet, 80-talet, 90-talet, 00-talet och 10-talet </p>
+      <p> i början 1970 så påverkade de inte sammhälle jätte mycket eftersom att inte så många hade tillgång till dem då
+        Däremot så kkunnde de gissa sig fram till vad som världen skulle se ut i framtiden<br> <br>
+        på 1980 talet så blev datorer och liknande som sagt vanligare i hemmen men fortfarande inte så välutvecklde
+        eller lätt tillgängliga. De kom på det grafiska gränssnittet, så att allt skulle kunna se bättre ut. 
+        Den första bärbara datorn kommer och väger ynka 10kg.
+        <p>  I början av 1990-talet var Internet bestående av ca 25 tusen sammankopplade nätverk.
+
+          Lokala nätverk var sammankopplade med regionala nät, som i sin tur var länkade till nationella nät, vilka hade förbindelse med det internationella nätet.
+          
+          Den militära kontrollen minskade drastiskt och Internet blev ett kommersiellt nät med statligt inflytande.
+          
+          Infrastrukturen för Internets tillväxt var till viss del byggd.
+          
+          Alltfler människor kunde upptäcka den nya världen i ”Cyberspace”. Program som ”Gopher” användes för att förenkla interaktionen med nätet och underlättade informationssökningen.
+          
+          Andra program var Archie som användes för att hålla reda på alla miljontals filer som plötsligt blev tillgängliga för de Internetanslutna. WAIS blev ett sätt att söka igenom databaser runtom på Internet.
+          
+          Det gick även att använda WAIS via Go
+  
+        </p><br><br>
+        <p>Det finns mycket att säga om utvecklingen de senaste åren. I början av 2000-talet präglades Internet av IT-bubblan, som till viss del är självupplevd.
+  
+          Jag kom i kontakt med företag som då omsatte mindre än 2 miljoner om året, hade 20 anställda och samtidigt värderades till över 40 miljoner.
+          
+          Idag har Inte bara Internet mognat utan även vår syn på digitalt företagande.
+          
+          Det finns visserligen fortfarande spår av denna hysteri som rådde då men i stort värderas företag med sin huvudsakliga verksamhet på nätet ungefär på samma sätt som andra företag.
+          
+          Nu har gränsterna suddats ut mellan Internetföretag och vad som i dagligt tal kallats för traditionella företag.
+          
+          Allt fler inser att Internet har gått från en vision till verklighet. Internethandeln blomstrar, industriföretag hittar nya kunder över hela världen, människor möts och Internet har blivit det vi en gång trodde att det skulle bli.
+      </p>
+      <p>påverkan under 2010 var rätt så stor. Allt mer saker gick över till att bli tjänster på internet. Tillexemepel handla mat/kläder/saker/ automatiska maskiner som gör saker åt en. Man skulle kunna säga att det mesta som händed var att allt blev enklare för oss och mer gjordes av robotar och liknande. 
+      </p>
+      <p> jämnför man dessa årtionen kan man se att utvecklingen ändrades stadigt utifrån vad människorna hade för behov. Ville de ha mer/nya grejer så kom det mer nya uppfinningar som fyllde dessa krav. Gammla uppfinningar blev till nyauppfinningar och de blev hela tiden bättre och bättre pga efterfrågan.
+
+      </p>
+  </div>
+  
+  <!-- Designers -->
+  <div class="w3-container" id="Sammhällspåverkan" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Historia.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p style="text-align: center"> Den första Tidsperioden (1960- och 1970 talet) :</p>  <br> 1963 blev både Ryssland och USA rädda för att respektive land skulle slå ut deras telefon nätverk. Däför behvövde de ha ett annat sätt för att komunicera med varandra utifall att de verkligen skulle bli utslagna. Det första "internetet" kallades för Arpanet och är föregångaren till dagens Internet.<br>
+     1969 lyckades de för första gången komunicera med en annan dator. 1976 införs ip/tcp protocol in i DARPA.<br>
+     1977 lyckas usa skicka ett meddelande över hela usa till ett univeritet i london och tillbaka.<br>
+    </p><br><br>
+     <p style="text-align: center">  Den andra perioden, (1980-talet och 1990-talet)</p>1982 kom det första spelet som kördes över internet "snipe".<br>
+      1988 går sverige med i NSFNET <br>
+     1989 är hastigheten uppe på 45Mbps och det är över 160 000 hostare</p>
+     <p>På 1990-talet uppstod World Wide Web (WWW), med internet som grund. Den första webbläsaren skapades av Tim Berners-Lee på Cern 1990. I samma tider började internetförbindelser erbjudas också kommersiellt. Windows 95 stödde internet och därmed blev det lätt för PC-användare i hemmen att koppla upp sig.<br> 
+       1990 ARPANET stängs ner och det är nu över 300 000 hostare<br>
+      1992 blir de över 1 000 000 hostare och MBONE kan överföra ljud och bild <br><br>
+      
+      </p>
+
+     </p>
+     <p style="text-align: center">  Den tredje perioden, (2000-talet och 2010-talet)</p>
+     <p>Under mitten av 00-talet börjar många prata om vad de kallar för web 2.0. Det är när webben börjar bygga på interaktion och samarbete snarare än statiska hemsidor. Youtube startas 2005. Twitter 2006 då också Facebook slår igenom i Sverige<br>
+      Decenniet avslutas med en dom. 2009 döms grundarna av fildelningssajten The Pirate Bay, som enligt dem själva ett tag stått för 40 procent av världens internettrafik, till fängelse. Men hemsidan lever vidare. Även om fildelningen försiktigt börjar minska, tack vare framgångsrika lagliga alternativ.<BR>
+        Under 10-talet börjar svenskarna i hög grad titta på film genom tjänster som Netflix, HBO Nordic, Viaplay och SVT Play.<br>
+        Samtidigt oroar sig många för att de stora företagen som i allt högre omfattning dominerar internet, så som Google, Apple och Facebook, ska försöka låsa in användarna på sina egna plattformar.<br>
+    </p>
+    <p><b>Our designers are thoughtfully chose</b>:</p>
+  </div>
+
+  <!-- The Team -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="/w3images/team2.jpg" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>John Doe</h3>
+          <p class="w3-opacity">CEO & Founder</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>Jane Doe</h3>
+          <p class="w3-opacity">Designer</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>Mike Ross</h3>
+          <p class="w3-opacity">Architect</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
