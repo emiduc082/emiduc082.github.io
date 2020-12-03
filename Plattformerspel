@@ -1,0 +1,105 @@
+int bollx=980;
+int bolly=565;
+float speedx=0;
+float speedy=0;
+float accy=0.1;
+int rectx = 200;
+color rod = color(255, 0, 0);
+color vit = color(255);
+color gron = color(49,199,0);
+int antal = 0;
+
+void setup() {
+  size(1000, 600);
+}
+
+void draw() {
+  background(255);
+
+  //styra bollen
+  if ( keyPressed) {
+    if (keyCode==RIGHT) {
+      bollx+=5;
+    }
+  }
+  if ( keyPressed) {
+    if (keyCode==LEFT) {
+      bollx-=5;
+    }
+  }
+  if ( keyPressed) {
+    if (keyCode==UP) {
+      bolly= bolly -5 ;
+    }
+  }
+  //if ( keyPressed) {
+  //  if (key==UP & key==LEFT) {
+  //    bolly+=5;
+  //    bollx-=5;
+  //  }
+  //}
+  
+
+  //marken    
+  fill(gron);
+  rect(0, 580, 1000, 25);
+  
+  
+
+//plattform
+  fill(gron);
+  rect(800,500,50,20);
+  
+  fill(gron);
+  rect(750,450,50,20);
+  
+  fill(gron);
+  rect(800,500,50,20);
+  
+  
+if (get(bollx, bolly)==gron) {
+    speedy=0;
+  }
+
+  //bollen
+  fill(rod);
+  ellipse(bollx, bolly, 20, 20);
+
+  // boll begränsningar
+  if (bollx>=1000) {
+    bollx = 990 ;
+  }
+  bollx +=speedx;
+  bolly +=speedy;
+  speedy+=accy;
+
+  
+}
+ void keyPressed()
+ {
+//   if (key==UP)
+//     keys[0]=true;
+//   if (key==LEFT)
+//     keys[1]=true;
+// }
+// void keyReleased()
+// {
+//   if (key=='a')
+//      keys[0]=false;
+//   if (key=='s')
+//      keys[1]=false;
+//}
+//void keyPressed() {
+//  if (key == CODED) {
+//    if (keyCode == UP) {
+//      yvel=yvel-vel;
+//    } else if (keyCode == DOWN) {
+//      yvel=yvel+vel;
+//    } 
+//    if (keyCode == LEFT) {
+//      xvel=xvel-vel;
+//    } else if (keyCode == RIGHT) {
+//      xvel=xvel+vel;
+//    }
+//  }
+}
