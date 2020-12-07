@@ -1,0 +1,167 @@
+
+int startx=980;
+int starty=565;
+int bollx=980;
+int bolly=565;
+
+float speedx=0;
+float speedy=0;
+float accy=0.1;
+float fstart=300;
+float fspeedx = 2;
+int rectx = 200;
+int antal = 0;
+
+color rod = color(255, 0, 0);
+color vit = color(255);
+color gron = color(49, 199, 0);
+color bla = color (0, 0, 255);
+color orange = color(255, 165, 0);
+color lila = color (255, 0, 255);
+color lava = color (207, 16, 32);
+color gul = color (0, 255, 255);
+
+void setup() {
+  size(1000, 600);
+}
+
+void draw() {
+  background(255);
+
+  //styra bollen
+  if ( keyPressed) {
+    if (keyCode==RIGHT) {
+      bollx+=5;
+    }
+  }
+  if ( keyPressed) {
+    if (keyCode==LEFT) {
+      bollx-=5;
+    }
+  }
+  if ( keyPressed) {
+    if (keyCode==UP) {
+      bolly= bolly -5 ;
+    }
+  }
+  //if ( keyPressed) {
+  //  if (key==UP & key==LEFT) {
+  //    bolly+=5;
+  //    bollx-=5;
+  //  }
+  //}
+
+
+  //marken    
+  fill(gron);
+  rect(0, 580, 1000, 25);
+
+  //lava 
+  fill(lava);
+  rect(100, 580, 50, 25);
+  if (get(bollx, bolly)==lava) {
+    bollx=startx;
+    bolly= starty;
+  }
+
+  //plattform
+  fill(gron);
+  rect(800, 500, 50, 20);
+
+  fill(gron);
+  rect(750, 450, 50, 20);
+
+  fill(gron);
+  rect(200, 500, 50, 20);
+
+  // tp plattform
+  fill(bla);
+  ellipse(700, 400, 40, 20); 
+  fill(orange);
+  ellipse(225, 400, 40, 20); 
+
+  // tp 
+  if (get(bollx, bolly)==bla) {
+    bollx=225;
+    bolly=500;
+  }
+  if (get(bollx, bolly)==orange) {
+    bollx=800;
+    bolly=400;
+  }
+
+  //häng grej
+  fill(lila);
+  rect(500, 500, 200, 5);
+
+  if (get(bollx, bolly)==lila) {
+    speedy=0;
+  }
+
+  if (get(bollx, bolly)==gron) {
+    speedy=0;
+  }
+  
+  
+  // fiende 
+  fstart= fstart + fspeedx;
+  fill(gul);
+  triangle(fstart, 585, fstart-40, 585, fstart-20, 550);
+
+  if (fstart>=500) {
+    fspeedx = -fspeedx ;
+  }
+  if (fstart<=200) {
+    fspeedx = -fspeedx ;
+  }
+
+  if (get(bollx, bolly)==gul) {
+    bollx=startx;
+    bolly=starty;
+  }
+
+  if (bollx, bolly) == () {
+  }
+
+
+
+  //bollen
+  fill(rod);
+  ellipse(bollx, bolly, 20, 20);
+
+  // boll begränsningar
+  if (bollx>=1000) {
+    bollx = 990 ;
+  }
+  bollx +=speedx;
+  bolly +=speedy;
+  speedy+=accy;
+}
+//void keyPressed()
+//{
+//   if (key==UP)
+//     keys[0]=true;
+//   if (key==LEFT)
+//     keys[1]=true;
+// }
+// void keyReleased()
+// {
+//   if (key=='a')
+//      keys[0]=false;
+//   if (key=='s')
+//      keys[1]=false;
+//}
+//void keyPressed() {
+//  if (key == CODED) {
+//    if (keyCode == UP) {
+//      yvel=yvel-vel;
+//    } else if (keyCode == DOWN) {
+//      yvel=yvel+vel;
+//    } 
+//    if (keyCode == LEFT) {
+//      xvel=xvel-vel;
+//    } else if (keyCode == RIGHT) {
+//      xvel=xvel+vel;
+//    }
+//  }
+}
