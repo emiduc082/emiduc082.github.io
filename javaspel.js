@@ -91,7 +91,7 @@ var scenario = {
     buttons:[["FLY", "advanceTo(scenario.ten)"]]
   },
   seven: {
-    image: "https://photos1.blogger.com/blogger/4430/2242/1600/P1020675.jpg,//",
+    image: "https://bildix.mmcloud.se/bildix/api/images/BvCiFz5ORv8GyXEYFUvmTXzvmEI.jpeg?fit=crop&h=600&w=1200",
     text: "Du springer hastigt in i köket, tar på dig förklädet och tvättar händerna precis som Marie alltid sagt. Därefter börjar du steka den. (Om den inte steks så tryck på Annat meal). Du har en rolig stund men glömmer bort tiden så medans du stod där inne ringde damen i kassan på aina och du behöver nu gitta ASAP walla. Hur flyr du?" ,
     buttons: [[" Annat meal", "advanceTo(scenario.twelve)"],["Bil", "advanceTo(scenario.eleven)"],["Ger upp", "advanceTo(scenario.thirteen)"],["Aina studsare", "advanceTo(scenario.fourteen)"]]
   },
@@ -107,7 +107,7 @@ var scenario = {
   },
   ten: {
     image: "https://www.gp.se/image/policy:1.4157446:1487109963/170214-champtisdag-416477-se-gp-1-jpg.jpg?f=Wide&w=1024&$p$f$w=cb354c0",
-    text: "På grund av din testo laddade röst får du det du ville ha och går smidigt därifrån som om ingenting hade hänt! WP ",
+    text: "På grund av din manliga laddade röst får du det du ville ha och går smidigt därifrån som om ingenting hade hänt! WP ",
     
   },
   eleven: {
