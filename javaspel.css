@@ -1,6 +1,6 @@
 body {
     color: white;
-    background-color: darkgrey;
+    background-color: black;
     font-size: 1.6em;
     margin-left: 30%;
     margin-right:30%;
@@ -26,9 +26,9 @@ body {
   }
   
   button{
-    background-color: lightcoral;
+    background-color: gray;
     margin-left: 12px;
     margin-top: 14px;
-    height: 20px;
+    height: 30px;
     font-size: 15px;
   }
