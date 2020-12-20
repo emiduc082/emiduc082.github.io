@@ -5,7 +5,7 @@ var text = document.getElementById("text");
 var buttonBox = document.getElementById('buttonBox');
 var input = document.getElementById('input');
 //this is the variable for the name of the character
-var yerdog;
+var meal;
 
 
 
@@ -14,7 +14,7 @@ var yerdog;
 input.onkeypress = function(event) {
   console.log(input.value);
   if (event.key == "Enter" || event.keyCode == 13) {
-    yerdog =  input.value;
+    meal =  input.value;
     input.parentNode.removeChild(input)
     advanceTo(scenario.two)
   }
@@ -56,7 +56,7 @@ var advanceTo = function(s) {
 //scenario = {}
 var scenario = {
   one: {
-    image: "https://imengine.gota.infomaker.io/?uuid=4d972bfd-7a1d-5b8e-a8c4-f392d486e933&width=960&height=480&type=preview&source=false&q=90&z=100&x=0.000&y=0.108&crop_w=1.000&crop_h=0.667&function=cropresize", //dog
+    image: "https://imengine.gota.infomaker.io/?uuid=4d972bfd-7a1d-5b8e-a8c4-f392d486e933&width=960&height=480&type=preview&source=false&q=90&z=100&x=0.000&y=0.108&crop_w=1.000&crop_h=0.667&function=cropresize", 
     text: " Du har precis anlänt till din närmaste McDonalds efter att blivit super sugen. Vilken ska du ta?\n",
   },
   two: {
@@ -65,30 +65,31 @@ var scenario = {
     buttons: [["Sneeky style", "advanceTo(scenario.three)"],["All out chaos", "advanceTo(scenario.four)"]]
   },
   three: {
-    image: "https://images.ohmyhosting.se/_GIobKMImV5Qy5wH4ggY64PmvDU=/831x425/smart/filters:quality(85)/https%3A%2F%2Fwww.besoksliv.se%2Fwp-content%2Fuploads%2F2017%2F11%2Fmcddd.jpg",//"https://s4.postimg.org/t1g20apst/261819008_d4316c1bdf_o.jpg",
-    text: "Du väntar snällt i kön tills det blir din tur. När du är framme vid kassan och ska betälla. Vad säger du till kasörskan?",
+    image: "https://images.ohmyhosting.se/_GIobKMImV5Qy5wH4ggY64PmvDU=/831x425/smart/filters:quality(85)/https%3A%2F%2Fwww.besoksliv.se%2Fwp-content%2Fuploads%2F2017%2F11%2Fmcddd.jpg",
+    text: "Du väntar snällt i kön och efter ett par minuter är det äntligen din tur! På vilket sätt tänker du prata med kassörskan?",
     buttons: [[" Vändligt", "advanceTo(scenario.five)"],["hotfullt", "advanceTo(scenario.six)"]]
   },
     four: {
     image: "https://shop.jakt.se/product-images/XL/webp/eberlestock-gunrunner-1.webp",
-    text: " Kulsprutan kommer fram ut ur din ryggsäck och du skriker ut din order" +meal  "Och skjuter några varningsskott i taket så de fattar vem som bestämmer. Du hoppar in över kassan och behöver nu välja om du vill ta en kall och gammal eller göra en egen.",
+    text: " Kulsprutan kommer fram ut ur din ryggsäck och du skriker ge mig min Ditt meal på momangen. Samtidigt skjuter du några varningsskott i taket så de fattar vem som bestämmer. Du hoppar in över kassan och behöver nu välja om du vill ta en kall och gammal eller göra en egen.",
     buttons: [["Gör egen", "advanceTo(scenario.seven)"],["Ta den gammla", "advanceTo(scenario.eight)"]]
   },
   five: {
     image: "https://www.mcdonalds.com/content/dam/se/nfl/Core/Footer/Jobb/mcd-sv-core-share-jobb.jpg",
-    text: "Tjena kexet, det här är ett råd och vi vill inte göra en stor grej av detta va? Ge mig min" +meal," så ska ingenting dåligt hända! Hon känner av rädslan i din mesiga röst och tar fram sin glock-18 med extended magasine och silenser och sätter en kall kula mellan din ögon "
+    text: "Tjena kexet, det här är ett råd och vi vill inte göra en stor grej av detta va? Ge mig vad jag vill ha så ska ingenting dåligt hända! Hon känner av rädslan i din mesiga röst och tar fram sin glock-18 med utökat magasin och ljuddämpare och sätter en kall kula mellan din ögon.",
     buttons: ["Whoops", "advanceTo(scenario.nine)"] 
+  },
 
   six: {
     image: "https://thumbs.dreamstime.com/b/r%C3%A4dd-kvinna-4752593.jpg",
-    text: "Tjena kexet, ge mig min " +meal "nu annars spränger jag hela stället. Hon känner av din dominans och ger dig inte bara en utan två stycken" +meal
+    text: "Tjena kexet, ge mig min order nu annars spränger jag hela stället. Hon känner av din dominans och ger dig inte bara en utan två stycken" ,
     button:[" FLYY", "advanceTo(scenario.ten)"]
   },
   seven: {
-    image: "https://photos1.blogger.com/blogger/4430/2242/1600/P1020675.jpg,//"
-    text: "Du springer hastigt in i köket, tar på ding förklädet och tvättar händerna precis som Marie allt sagt. Därefter börjar du steka den. ( om den inte steks så tryck på twelve). Du har en rolig stund men glömmer bort tiden så medans du stog där inne ringde damen i kassan på aina och du behöver nu gitta ASAP walla. Hur flyr du?",
-    buttons: [[" Twelve", "advanceTo(scenario.twelve)"],["Bil", "advanceTo(scenario.eleven)"],["Ger upp", "advanceTo(scenario.thirteen)"],["Aina studsare", "advanceTo(scenario.fourteen)"]
-  }
+    image: "https://photos1.blogger.com/blogger/4430/2242/1600/P1020675.jpg,//",
+    text: "Du springer hastigt in i köket, tar på dig förklädet och tvättar händerna precis som Marie alltid sagt. Därefter börjar du steka den. (Om den inte steks så tryck på twelve). Du har en rolig stund men glömmer bort tiden så medans du stog där inne ringde damen i kassan på aina och du behöver nu gitta ASAP walla. Hur flyr du?" ,
+    buttons: [[" Twelve", "advanceTo(scenario.twelve)"],["Bil", "advanceTo(scenario.eleven)"],["Ger upp", "advanceTo(scenario.thirteen)"],["Aina studsare", "advanceTo(scenario.fourteen)"]]
+  },
   eight: {
     image: "https://images.freeimages.com/images/premium/previews/1233/12338348-portrait-of-happy-business-colleagues-standing-in-a-line.jpg",
     text: "Du väntar snällt i kön tills det blir din tur. När du är framme vid kassan och ska betälla. Vad säger du till kasörskan?",
