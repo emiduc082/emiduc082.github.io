@@ -1,0 +1,114 @@
+body {background-color: white;
+} 
+h1 {
+    text-align: center;
+    margin-top: 10px;
+    text-decoration: underline;
+}
+h2,h3 {color:black;
+    text-align: left
+}
+
+ 
+h1.double, p.double{
+    
+    border-style:  none none solid none;
+    border-color:  #2743c0;
+    border-bottom-width: 5px;
+    
+}   
+
+table{
+    border-collapse:collapse;
+    width:100%;
+    }
+
+td,th {
+    border:1px solid grey; 
+    padding: 8px;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color:lightgray
+}
+
+iframe{ color: aqua; 
+    width: 200px ; 
+    height: 200px ; 
+    border:yellow 
+}
+
+.myDiv{border:5px outset darkgrey ; 
+    background-color: lightgrey ; 
+    text-align: left;
+    width: 300px; 
+    height:203px
+}
+
+.Div1{border:5px outset black ;
+    background-color: lightblue ;
+    text-align: left; 
+    width: 130px; 
+    height:50px
+}
+
+.Div2{border:10px outset black ; 
+    background-color: lightblue ;
+    align-content: center; 
+    width: 300px ;
+    height: 300px;
+}
+
+.Div3{border:2px outset black ;
+    width: 152PX ; 
+    height: 40px;
+}
+
+.uppgifter{width: 17%;
+    float:left;
+    margin-right:1%;
+
+}
+
+.sUppgifter { 
+    font-size: 0.9em;
+    line-height: 1.6em;
+}
+
+.sidbyte{
+    width: auto ;
+    position: absolute;
+    right: 0px;
+    bottom: 200px;
+}
+.logo{
+    width: 160px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+footer{
+    position: absolute;
+    bottom: 0px;
+    width:99.4%;
+    height:20%;
+    background-repeat:no-repeat;
+    background-color:#2743c0;
+    
+    
+}
+.inner_footer{
+   
+    width: 1000px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footerbox{
+    width: 32%;
+    height: 150px;
+    float: left;
+    color: white;
+    font-size: 18px
+}
