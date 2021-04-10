@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="Main.css">
+<link rel="stylesheet" href="main.css">
 <script src="myscripts.js"></script>
 
-
 <html>
-  <head>
+    <head>
       <link rel="preconnect" href="https://fonts.gstatic.com">
       <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
       
-      <title> Om oss </title>
+      <title> Väder </title>
       <style>
-        /* body {
+        body {
           background-image: url('Berg.png');
           background-repeat: no-repeat;
-        } */
+        } 
+        
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+             border: 1px solid red; 
+        }
         .footer-container{
-            position: absolute;
-            bottom: 0;
-            width: 100%;
+            position:absolute;
+            bottom:0;
+            width:100%;
+            height:13vw ;
         }
         </style>
      
@@ -34,28 +40,12 @@
         
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">VISA MER</a>
       </div>
-        <h1> 
-            Om oss
-        </h1>
 
-        <div class="BrodTextOmOss">
-            <div class="col-4">Ring oss på Detta nummer :</div>
-            <div class="col-4">0707-07070707</div>
-            <div class="col-4"> Mejla oss på denna mail :</div>
-            <div class="col-4"> någont@gmail.com</div>
-        </div>
+        <div  class="iframe">
+         <iframe id="widget-iframe" width="600px" height="235px" 
+        src="https://services.metservice.com/weather-widget/widget?params=blue|large|portrait|days-3|classic&loc=pukekohe&type=rural" allowtransparency="true" style="border:none"></iframe>
+    </div>
 
-        <div class="BrodTextOmOss">
-            <div class="col-4"> Live Chat</div>
-            <div class="col-4"> Skriv din fråga här</div>
-            <div class="col-4"> Frågor och Svar</div>
-            <div class="col-4"> Hej</div>
-        </div>
-            
-            
-            
-
-        
         <div class="footer-container">
             <div class="footer">
               <div class="footer-heading footer-1">

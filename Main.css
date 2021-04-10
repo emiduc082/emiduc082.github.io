@@ -22,6 +22,32 @@ body {
   background-color:  #FFF ;
 
 }
+.PriserBilder{
+  height:35vh;
+  width: auto;
+}
+.Biljetter{
+  height:auto;
+  width: 13vw;
+}
+
+iframe {
+  display: block;
+  border-style:none;
+}
+.iframe {
+  width: 100px;
+  height: 500px;
+  margin: 0 auto;
+  margin-top: 10%;
+  margin-left: 45%;
+  
+}
+.meny{
+  margin-top: 5%;
+  
+}
+
 
 /*footer */
 *{
@@ -83,6 +109,15 @@ text-align: left;
 
 .BrodTextOmOss{
   padding-top: 10vh;
+}
+.BrodTextPriser{
+  padding-top: 10vh;
+}
+h4{
+  color:black;
+  font-weight: 90;
+  text-align: center;
+  font-size: 0.88vw;
 }
 
 h3{
@@ -172,10 +207,10 @@ p{
   box-sizing: border-box;
 } 
 
-.col-1 {width: 8.33%;}
+.col-1 {width: 12.5%;}
 .col-2 {width: 20.0%;}
 .col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
+.col-4{width: 33.33%;}
 .col-5 {width: 41.66%;}
 
 
@@ -189,7 +224,7 @@ p{
     display: block;
     
   }
-  [class*="col-"] {
+  .col-3{
     width: 100%;
   }
   h2{
@@ -198,10 +233,45 @@ p{
   h3{
     font-size: 4vw;
   }
+  h4{
+    font-size: 10vw;
+  }
   p{
     font-size: 2.5vw;
   }
+  .Biljetter{
+    width: 40vw;
+  }
 }
+
+@media only screen and (max-width: 1440px) {
+  h3{
+    font-size:3vw ;
+  }
+  h2{
+    font-size: 1.5vw;
+  }
+  h4{
+    font-size:1.3vw ;
+  }
+  
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 960px) {
+  h3{
+    font-size:3.5vw ;
+  }
+  h2{
+    font-size: 2vw;
+  }
+  h4{
+    font-size:1.72vw ;
+  }
+  .Biljetter{
+    width: 25vw;
+  }
+}
+
 
 @media screen and (max-width: 600px) {
   .topnav.responsive {position: relative;}
@@ -220,7 +290,7 @@ p{
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  [class*="col-"] {
+  .col-3 {
     width: 50%;
   }
   p{
@@ -232,9 +302,12 @@ p{
 
 @media only screen and (min-width: 768px) {
   /* For mobile phones: */
-  [class*="col-"] {
-    width: 25%;
+  .col-4{
+    width: 33.33%;
   } 
+  .col-3{
+    width: 25%;
+  }
   p{
     font-size: 1.1vw;
   }
@@ -270,21 +343,3 @@ p{
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (max-width: 1440px) {
-  h3{
-    font-size:3vw ;
-  }
-  h2{
-    font-size: 1.5vw;
-  }
-  
-}
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (max-width: 960px) {
-  h3{
-    font-size:3.5vw ;
-  }
-  h2{
-    font-size: 2vw;
-  }
-}
