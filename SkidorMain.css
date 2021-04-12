@@ -1,4 +1,4 @@
-/* vanliga */
+/* vanliga lang="en"*/
 html {
   font-family: 'Open Sans', sans-serif;
 }
@@ -23,7 +23,7 @@ body {
 
 }
 .PriserBilder{
-  height:35vh;
+  height:40vh;
   width: auto;
 }
 .Biljetter{

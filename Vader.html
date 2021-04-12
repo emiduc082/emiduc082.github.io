@@ -1,22 +1,19 @@
 <!DOCTYPE html>
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="SkidorMain.css">
-<script src="myscripts.js"></script>
-
-<html>
-    <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="SkidorMain.css">
+  <script src="myscripts.js">
+  </script>
+<html lang="sv">
+  <head>
       <link rel="preconnect" href="https://fonts.gstatic.com">
       <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-      
-      <title> Väder </title>
+      <title> Väder 
+      </title>
       <style>
         body {
           background-image: url('Berg.png');
           background-repeat: no-repeat;
         } 
-        
-       
         .footer-container{
             position:absolute;
             bottom:0;
@@ -24,10 +21,8 @@
             height:13vw ;
         }
         </style>
-     
-
-    </head>
-    <body>
+  </head>
+  <body>
       <div class="topnav" id="myTopnav">
         <a href="https://emiduc082.github.io/SkidorIndex.html" class="active"><h2>Hem </h2></a>
         <a href="https://emiduc082.github.io/Priser.html"><h2> Priser </h2></a>
@@ -36,12 +31,10 @@
         
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">VISA MER</a>
       </div>
-
         <div  class="iframe">
-         <iframe id="widget-iframe" width="600px" height="235px" 
-        src="https://services.metservice.com/weather-widget/widget?params=blue|large|portrait|days-3|classic&loc=pukekohe&type=rural" allowtransparency="true" style="border:none"></iframe>
+         <iframe id="widget-iframe" width="600" height="235" 
+        src="https://services.metservice.com/weather-widget/widget?params=blue" style="border:none"></iframe>
     </div>
-
     <div class="footer-container">
       <div class="footer">
         <div class="footer-heading footer-1">
@@ -59,11 +52,6 @@
           <input type="submit" value =" Registrera" id="footer-email-btn">
         </div>
       </div>
-    </div>
-
-
-        
-      
-          
-    </body>
+    </div>   
+  </body>
 </html>
