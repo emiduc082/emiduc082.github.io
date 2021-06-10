@@ -114,27 +114,24 @@ text-align: left;
 }
 h4{
   color:black;
-  font-weight: 90;
-  text-align: center;
-  font-size: 0.88vw;
-}
-
-h3{
-  color: #1167b1;
-  font-size: 2vw;
   font-weight: 100;
   text-align: center;
 }
 
+h3{
+  color: #1167b1;
+  font-weight: bold;
+  text-align: center;
+  
+}
+
 h2{
   color: #FFF;
-  font-size: 1vw;
   font-weight: 100;
 
 }
 h1{ 
   color: #1167b1;
-  font-size: 3vw;
   font-weight: 100;
   text-align: center;
   padding-top: 5vh;
@@ -142,7 +139,6 @@ h1{
 }
 
 p{
-  font-size: 1vw;
   font-weight: 100;
   text-align: left;
   position: relative;
@@ -162,7 +158,6 @@ p{
   text-align: center;
   padding: 25px 16px;
   text-decoration: none;
-  font-size: 1.5vw;
 }
 
 .topnav a:hover {
@@ -227,20 +222,6 @@ p{
   }
   .Biljetter{
     margin-left: 38%;
-  }
-  h2{
-    font-size: 2.5vw;
-  }
-  h3{
-    font-size: 4vw;
-  }
-  h4{
-    font-size: 10vw;
-  }
-  p{
-    font-size: 2.5vw;
-  }
-  .Biljetter{
     width: 40vw;
   }
 }
@@ -263,34 +244,16 @@ p{
   .col-3 {
     width: 50%;
   }
-  p{
-    font-size: 2vw;
-  } 
+  
 }
 
 
 @media only screen and (max-width: 1440px) {
-  h3{
-    font-size:3vw ;
-  }
-  h2{
-    font-size: 1.5vw;
-  }
-  h4{
-    font-size:1.3vw ;
-  } 
+
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (max-width: 960px) {
-  h3{
-    font-size:3.5vw ;
-  }
-  h2{
-    font-size: 2vw;
-  }
-  h4{
-    font-size:1.72vw ;
-  }
+
   .Biljetter{
     width: 25vw;
   }
@@ -304,19 +267,13 @@ p{
   .col-3{
     width: 25%;
   }
-  p{
-    font-size: 1.1vw;
-  }
-  .topnav a{
-    font-size: 2vw;
-  }
-}
 
+}
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
 
   .topnav a {
-    float: center;
+    margin:0 auto ;
   }
 
 }
